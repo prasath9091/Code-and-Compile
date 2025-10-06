@@ -11,15 +11,15 @@ int main()
     scanf("%d %d %d",&a,&b,&x);
     if(x%100==0)
     {
-        if((a*100) && (b*500)==x)
+        if((a*100) + (b*500)==x)
         {
             printf("Collect Your Cash");
         }
-        else if((a*100)&&(b*500)<x)
+        else if((a*100)+(b*500)<x)
         {
             printf("Insufficient Money");
         }
-        else if((a*100)&&(b*500)>x)
+        else if((a*100)+(b*500)>x)
         {
             int t=x/500;
             if((b>=3) && (x-(t*500))<=(a*100))
